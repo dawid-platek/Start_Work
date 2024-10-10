@@ -23,8 +23,8 @@ namespace OpenWebsitesAndDrive
             string programPath = @"C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"; //Microsoft Outlook
             Process.Start(new ProcessStartInfo(programPath) { UseShellExecute = true });
 
-            // Dodanie opóźnienia 12 sekund (12000 milisekund)
-            Thread.Sleep(12000);
+            // Dodanie opóźnienia 25 sekund (25000 milisekund)
+            Thread.Sleep(25000);
 
             // Instalacja aplikacji desktopowej ze Sklepu Microsoft
             string appPackage = "Microsoft.Todos_8wekyb3d8bbwe!App"; // Zastąp "Microsoft.YourApp_8wekyb3d8bbwe!App" odpowiednim PackageFamilyName i AppID
@@ -42,6 +42,8 @@ namespace OpenWebsitesAndDrive
             // Otwieranie Dun & Bradstreet
             string appId2 = "--app-id=ddigokhlodmfdnihjnknlmkihblieiga";
             Process.Start(new ProcessStartInfo(chromeProxyPath, $"{profileDirectory} {appId2}") { UseShellExecute = true });
+            // Dodanie opóźnienia 4 sekund (4000 milisekund)
+            Thread.Sleep(4000);
             // Otwieranie Kalendarz Google
             string appId3 = "--app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep";
             Process.Start(new ProcessStartInfo(chromeProxyPath, $"{profileDirectory} {appId3}") { UseShellExecute = true });
