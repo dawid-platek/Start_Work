@@ -23,8 +23,8 @@ namespace OpenWebsitesAndDrive
             string programPath = @"C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"; //Microsoft Outlook
             Process.Start(new ProcessStartInfo(programPath) { UseShellExecute = true });
      
-            // Instalacja aplikacji ze Sklepu Microsoft
-            string appPackage = "Microsoft.Todos"; // Zastąp "Microsoft.YourApp_8wekyb3d8bbwe!App" odpowiednim PackageFamilyName i AppID
+            // Instalacja aplikacji desktopowej ze Sklepu Microsoft
+            string appPackage = "Microsoft.Todos_8wekyb3d8bbwe!App"; // Zastąp "Microsoft.YourApp_8wekyb3d8bbwe!App" odpowiednim PackageFamilyName i AppID
             Process.Start(new ProcessStartInfo("explorer.exe", $"shell:AppsFolder\\{appPackage}") { UseShellExecute = true });
 
             // Ścieżka do Chrome Proxy i parametry
