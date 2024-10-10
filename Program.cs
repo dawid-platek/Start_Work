@@ -23,8 +23,8 @@ namespace OpenWebsitesAndDrive
             string programPath = @"C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"; //Microsoft Outlook
             Process.Start(new ProcessStartInfo(programPath) { UseShellExecute = true });
 
-            // Dodanie opóźnienia 25 sekund (25000 milisekund)
-            Thread.Sleep(25000);
+            // Dodanie opóźnienia 12 sekund (12000 milisekund)
+            Thread.Sleep(12000);
 
             // Instalacja aplikacji desktopowej ze Sklepu Microsoft
             string appPackage = "Microsoft.Todos_8wekyb3d8bbwe!App"; // Zastąp "Microsoft.YourApp_8wekyb3d8bbwe!App" odpowiednim PackageFamilyName i AppID
