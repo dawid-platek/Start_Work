@@ -23,15 +23,15 @@ namespace OpenWebsitesAndDrive
             string programPath = @"C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"; //Microsoft Outlook
             Process.Start(new ProcessStartInfo(programPath) { UseShellExecute = true });
 
-            // Dodanie opóźnienia 12 sekund (12000 milisekund)
-            Thread.Sleep(12000);
+            // Dodanie opóźnienia 18 sekund (18000 milisekund)
+            Thread.Sleep(18000);
 
             // Instalacja aplikacji desktopowej ze Sklepu Microsoft
             string appPackage = "Microsoft.Todos_8wekyb3d8bbwe!App"; // Zastąp "Microsoft.YourApp_8wekyb3d8bbwe!App" odpowiednim PackageFamilyName i AppID
             Process.Start(new ProcessStartInfo("explorer.exe", $"shell:AppsFolder\\{appPackage}") { UseShellExecute = true });
 
-            // Dodanie opóźnienia 8 sekund (8000 milisekund)
-            Thread.Sleep(8000);
+            // Dodanie opóźnienia 10 sekund (10000 milisekund)
+            Thread.Sleep(10000);
 
             // Otwieranie aplikacji webowych, ścieżka do Chrome Proxy i parametry
             string chromeProxyPath = @"C:\Program Files (x86)\Google\Chrome\Application\chrome_proxy.exe";
